@@ -14,15 +14,28 @@
     /* flex-direction: row-reverse; */
 
     /* up to down */
-    /* flex-direction: column; */
+    flex-direction: column;
 
     /* down to up */
-    flex-direction: column-reverse ;
+    /* flex-direction: column-reverse ; */
+
+    /* if the total item width is greater than the container width, the specific number of items will overflow. to avoid this problem use this */
+    
+    /* by default nowrap */
+    /* flex-wrap: nowrap; */
+
+    /* overflowed items will go to the next line from top to bottom for flex direction row */
+    /* but for flex direction column wrap will work from left to right */
+    /* flex-wrap: wrap; */
+
+    /* bottom to top wrap for flex direction row  */
+    /* but for flex direction column wrap will work from right to left */
+    flex-wrap: wrap-reverse;
 }
 
 .item {
     width: 50px;
-    height:50px;
+    min-height:80px;
     line-height: 50px;
     color: white;
     font-size: 20px;
