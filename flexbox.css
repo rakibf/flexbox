@@ -7,6 +7,9 @@
     /* this property has a super power to move all the items side by side */
     display: flex;
 
+
+    /* flex flow */
+
     /* left to right */
     /* flex-direction: row; */
 
@@ -14,7 +17,7 @@
     /* flex-direction: row-reverse; */
 
     /* up to down */
-    flex-direction: column;
+    /* flex-direction: column; */
 
     /* down to up */
     /* flex-direction: column-reverse ; */
@@ -24,18 +27,65 @@
     /* by default nowrap */
     /* flex-wrap: nowrap; */
 
-    /* overflowed items will go to the next line from top to bottom for flex direction row */
+    /* overflowed items will go to the next line from top to bottom for flex-direction: row */
     /* but for flex direction column wrap will work from left to right */
     /* flex-wrap: wrap; */
 
     /* bottom to top wrap for flex direction row  */
-    /* but for flex direction column wrap will work from right to left */
-    flex-wrap: wrap-reverse;
+    /* but for flex-direction: column wrap will work from right to left */
+    /* flex-wrap: wrap-reverse; */
+
+    /* this is a shorthand property for flex-direction and flex-wrap */
+    /* flex-flow: [flex-direction] [flex-wrap];  */
+    /* flex-flow: column wrap-reverse; */
+    flex-flow: row wrap;
+
+
+
+    /* main axis alignment */
+
+    /* movement of itmes inside a single container */
+
+    /* default */
+    /* justify-content: flex-start; */
+
+    /* alignment to the end */
+    /* justify-content: flex-end; */
+
+    /* center alignment */
+    /* justify-content: center; */
+
+    /* space around eache item */
+    /* justify-content: space-around; */
+
+    /* space between items */
+    /* justify-content: space-between; */
+
+    /* equal space distribution */
+    /* justify-content: space-evenly; */
+
+
+    /* cross axis alignment */
+
+    /* movement of itmes inside two rows (for flex-direction:row) as two containers or two columns (for flex-direction:column) as two containers */
+
+    /* by default stretch makes the items stretch inside their container (if no fixed height is given) */
+    /* align-items: stretch; */
+
+    /* alignment to the start inside their individual container */
+    /* align-items: start; */
+
+    /* alignment to the end of their container */
+    align-items: flex-end;
+
+    /* alignment to the center */
+    /* align-items: center; */
+
 }
 
 .item {
-    width: 50px;
-    min-height:80px;
+    min-width: 130px;
+    height:40px;
     line-height: 50px;
     color: white;
     font-size: 20px;
