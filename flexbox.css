@@ -29,7 +29,7 @@
 
     /* overflowed items will go to the next line from top to bottom for flex-direction: row */
     /* but for flex direction column wrap will work from left to right */
-    /* flex-wrap: wrap; */
+    flex-wrap: wrap;
 
     /* bottom to top wrap for flex direction row  */
     /* but for flex-direction: column wrap will work from right to left */
@@ -38,7 +38,7 @@
     /* this is a shorthand property for flex-direction and flex-wrap */
     /* flex-flow: [flex-direction] [flex-wrap];  */
     /* flex-flow: column wrap-reverse; */
-    flex-flow: row wrap;
+    /* flex-flow: row wrap; */
 
 
 
@@ -67,34 +67,72 @@
 
     /* cross axis alignment */
 
-    /* movement of itmes inside two rows (for flex-direction:row) as two containers or two columns (for flex-direction:column) as two containers */
+    /* movement of itmes inside two/three rows (for flex-direction:row) as two/three containers or two columns (for flex-direction:column) as two containers */
 
     /* by default stretch makes the items stretch inside their container (if no fixed height is given) */
     /* align-items: stretch; */
 
     /* alignment to the start inside their individual container */
-    /* align-items: start; */
+    /* align-items: flex-start; */
 
     /* alignment to the end of their container */
-    align-items: flex-end;
+    /* align-items: flex-end; */
 
     /* alignment to the center */
     /* align-items: center; */
 
+
+    /* align-content aligns along cross axis. it is same as justify-content */
+    /* movements of items inside a single container */
+    /* align-content: flex-start; */
+    /* align-content: flex-end; */
+    /* align-content: center; */
+    /* align-content: space-around; */
+    /* align-content: space-between; */
+    /* align-content: space-evenly; */
 }
 
 .item {
-    min-width: 130px;
+    /* min-width: 150px; */
     height:40px;
     line-height: 50px;
     color: white;
     font-size: 20px;
     font-weight: bold;
     text-align: center;
+
+    /* giving flex-grow: 1; means every item will grow when they get space */
+    /* flex-grow: 1; */
+
+    /* by default flex-shrink: 1; to make it responsive */
+
+    /* if we don't wrap and use flex-srink: 0; the items may overflow */
+    /* flex-shrink: 0; */
+
+    /* flex-basis and min-width is almost same. but min-width is strict in maintaining the width. so the items may overflow. but flex basis is the starting width and responsive. even any item using flex basis may use less width then defined in flex-basis */
+    /* flex-basis: 150px; */
+
+
+    /* shorthand property flex */
+    /* flex: [flex-grow] [flex-shrink] [flex-basis]; */
 }
 
 .item.one {
     background-color: red;
+    /* order property defines the order of an item */
+    /* which item has less order value (by default everyone has 0) will stand first */
+
+    /* item one will go to the last as everyone has 0 value and this one has 1 value */
+    /* order: 1; */
+    
+    /* flex grow defines the growing level of an item */
+
+    /* by default flex-grow: 0; */
+    /* flex-grow: 1; */
+
+    /* flex-srink: 2; means it will shrink 2x then any other item */
+    /* flex-shrink: 2; */
+
 }
 .item.two {
     background-color: brown;
