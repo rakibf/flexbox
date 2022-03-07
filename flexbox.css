@@ -1,0 +1,47 @@
+.container {
+    width: 500px;
+    height: 300px;
+    margin: 2rem auto;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+
+    /* this property has a super power to move all the items side by side */
+    display: flex;
+
+    /* left to right */
+    /* flex-direction: row; */
+
+    /* right to left */
+    /* flex-direction: row-reverse; */
+
+    /* up to down */
+    /* flex-direction: column; */
+
+    /* down to up */
+    flex-direction: column-reverse ;
+}
+
+.item {
+    width: 50px;
+    height:50px;
+    line-height: 50px;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.item.one {
+    background-color: red;
+}
+.item.two {
+    background-color: brown;
+}
+.item.three {
+    background-color: coral;
+}
+.item.four {
+    background-color: rgb(107, 107, 6);
+}
+.item.five {
+    background-color: springgreen;
+}

@@ -1,0 +1,27 @@
+* {
+    box-sizing: border-box;
+}
+.float {
+    margin: 1rem auto;
+    width: 500px;
+    overflow: auto;
+}
+.float main {
+    width: 100%;
+    padding: 15px;
+    background-color: aqua;
+}
+
+.first-child {
+    width: 50%;
+    float:left;
+    padding: 10px;
+    background-color: blueviolet;
+}
+
+.last-child {
+    width: 50%;
+    float: right;
+    padding: 10px;
+    background-color: brown;
+}
